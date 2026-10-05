@@ -6,132 +6,100 @@
 
     <title>Français</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #84cbc9;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        header {
+            height: 90px;
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-bottom: 3px solid black;
+        }
+
+        header img {
+            height: 60px;
+            width: 60px;
+            object-fit: contain;
+        }
+
+        header h1 {
+            margin: 0 0 0 15px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .slides {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: white;
+            border: 4px solid black;
+            box-shadow: 10px 10px 0 black;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                height: 70px;
+            }
+
+            header img {
+                height: 45px;
+                width: 45px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            main {
+                margin-top: 25px;
+            }
+
+            .slides {
+                box-shadow: 5px 5px 0 black;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <header>
-        <nav class="navbar">
-            <a href="#" class="brand">
-                <img src="logo.png" alt="Step Up logo">
-                <span>Français</span>
-            </a>
-
-            <div class="nav-links">
-                <a href="#accueil">Accueil</a>
-                <a href="#cours">Cours</a>
-                <a href="#a-propos">À propos</a>
-            </div>
-        </nav>
+        <img src="logo.png" alt="Logo">
+        <h1>Français</h1>
     </header>
 
-
-    <!-- Hero -->
     <main>
-
-        <section id="accueil" class="hero">
-
-            <div class="hero-content">
-                <p class="eyebrow">APPRENDRE • PROGRESSER • RÉUSSIR</p>
-
-                <h1>
-                    Bienvenue en<br>
-                    <span>Français.</span>
-                </h1>
-
-                <p class="description">
-                    Découvrez la langue française à travers des cours,
-                    des activités et des ressources simples et interactives.
-                </p>
-
-                <div class="buttons">
-                    <a href="#cours" class="button primary">
-                        Commencer
-                    </a>
-
-                    <a href="#a-propos" class="button secondary">
-                        En savoir plus
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-logo">
-                <img src="logo.png" alt="Logo">
-            </div>
-
-        </section>
-
-
-        <!-- Courses -->
-        <section id="cours" class="courses">
-
-            <div class="section-heading">
-                <p class="eyebrow">APPRENDRE</p>
-                <h2>Explorez le français</h2>
-            </div>
-
-            <div class="cards">
-
-                <article class="card">
-                    <div class="card-number">01</div>
-                    <h3>Vocabulaire</h3>
-                    <p>
-                        Enrichissez votre vocabulaire et découvrez
-                        de nouveaux mots français.
-                    </p>
-                    <a href="#">Découvrir →</a>
-                </article>
-
-                <article class="card">
-                    <div class="card-number">02</div>
-                    <h3>Grammaire</h3>
-                    <p>
-                        Comprenez les règles essentielles de la
-                        grammaire française.
-                    </p>
-                    <a href="#">Découvrir →</a>
-                </article>
-
-                <article class="card">
-                    <div class="card-number">03</div>
-                    <h3>Culture</h3>
-                    <p>
-                        Explorez la culture, l'histoire et les traditions
-                        de la France.
-                    </p>
-                    <a href="#">Découvrir →</a>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- About -->
-        <section id="a-propos" class="about">
-
-            <div>
-                <p class="eyebrow">À PROPOS</p>
-                <h2>Le français,<br><span>autrement.</span></h2>
-            </div>
-
-            <p>
-                Une plateforme simple et accessible pour apprendre,
-                pratiquer et apprécier la langue française.
-            </p>
-
-        </section>
-
+        <div class="slides">
+            <iframe
+                src="YOUR_GOOGLE_SLIDES_EMBED_URL"
+                allowfullscreen>
+            </iframe>
+        </div>
     </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Français</p>
-        <p>Apprendre. Progresser. Réussir.</p>
-    </footer>
 
 </body>
 </html>
